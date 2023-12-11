@@ -1,0 +1,80 @@
+.main-box{
+    display: flex;
+}
+.poster{
+    width: 50%;
+    background-color: rgb(45, 45, 179);
+    height: 100vh;
+    color: white;
+    position: fixed;
+}
+.poster h1{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Nova Square', sans-serif;
+    color: rgba(240, 248, 255, 0.888);
+    letter-spacing: 2px;
+    text-shadow: 5px 6px 5px rgb(16, 16, 16);
+}
+.form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    left: 50%;
+}
+.form-input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    line-height: 100px;
+}
+form{
+    width: 70%;
+}
+input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(252, 32, 32);
+}
+input::placeholder{
+    font-size: 25px;
+}
+form h1{
+    position: relative;
+    top: 100px;
+    font-weight: 400;
+    padding-bottom: 100px;
+}
+.form-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    gap: 20px;
+}
+.ch-1{
+    height: 100px;
+    display: flex;
+    align-items: flex-start;
+}
+input:checked + label{
+    color: red;
+}
+.btn-submit-box{
+height: 300px;
+}
+.btn-submit{
+    position: relative;
+    left: -70%;
+    padding: 10px 80px;
+    background-color: rgba(255, 221, 0, 0.789);
+}
+.footer{
+    position: relative;
+}

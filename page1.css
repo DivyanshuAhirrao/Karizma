@@ -1,0 +1,149 @@
+nav{
+    overflow: hidden;
+}
+.car-details-box{
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+}
+.car-box-section{
+    height: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+.feature-title{
+    position: absolute;
+    top: 100px;
+    color: aliceblue;
+}
+
+
+/* Font Style */
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 30vh;
+	z-index: 100;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0.1) 75%,
+		rgba(255, 255, 255, 0.1) 80%,
+		rgba(255, 255, 255, 0.25) 95%,
+		rgba(255, 255, 255, 0) 100%
+	);
+}
+
+.text {
+	font-family: "Yanone Kaffeesatz";
+	font-size: 180px;
+	display: flex;
+    letter-spacing: 20px;
+	position: absolute;
+    color: rgb(224, 219, 219,0.8);
+	bottom: -10vh;
+	left: 50%;
+	transform: translateX(-50%);
+	user-select: none;
+    overflow: hidden;
+
+	.wrapper {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 20px;
+		.letter {
+			transition: ease-out 0.5s;
+			transform: translateY(40%);
+		}
+		.shadow {
+			transform: scale(1, -1);
+			color: #ffc8c8;
+            opacity: 0.1;
+			transition: ease-in 5s, ease-out 5s;
+		}
+		&:hover {
+			.letter {
+				transform: translateY(-50%);
+			}
+			.shadow {
+				opacity: 0.5;
+				transform: translateY(200%);
+			}
+		}
+	}
+}
+
+
+.car-imgg{
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    overflow: hidden;
+}
+.c-img1{
+    background-image: url(./media/photos/page1-img1.webp);
+}
+.c-img2{
+    background-image: url(./media/photos/page1-img2.jpg);
+}
+.c-img3{
+    background-image: url(./media/photos/page1-img2.webp);
+}
+.c-img4{
+    background-image: url(./media/photos/page1-img4.webp);
+}
+.car-detailss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color:black;
+}
+.content-box{
+    height: 75%;
+    width: 50%;
+    outline-width: 5px;
+    outline-offset: 2px;
+    outline-style: groove;
+    outline-color: rgba(192, 192, 192, 0.391);
+    padding: 20px;
+}
+.content-box:hover{
+    transition: all 0.3s;
+    box-shadow: 3px 3px 18px 15px rgb(255, 75, 47,0.35);
+    /* transform: scale(1.1); */
+    cursor: pointer;
+}
+.car-detailss h1{
+    padding-top: 20px;
+    font-size: 43px;
+    color: white;
+    letter-spacing: 5spx;
+}
+.car-detailss h5{
+    padding-top: 20px;
+    font-size: 15px;
+    color: rgb(255, 219, 37);
+}
+.p1{
+    padding-top: 20px;
+    font-size: 14px;
+    color: rgb(241, 241, 241, 0.8);
+    font-family: 'Silkscreen', sans-serif;
+    position: relative;
+    top: 30px;
+}
+.p2{
+    padding-top: 20px;
+    font-size: 14px;
+    color: rgb(241, 241, 241,0.8);
+    font-family: 'Silkscreen', sans-serif;
+    position: relative;
+    top: 20px;
+}
